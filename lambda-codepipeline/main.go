@@ -23,7 +23,7 @@ func findAll() (events.APIGatewayProxyResponse, error) {
 	if err != nil {
 		return events.APIGatewayProxyResponse{
 			StatusCode: http.StatusInternalServerError,
-			Body:       "Error while retrieving AWS credentials",
+			Body:       "Error reported while retrieving AWS credentials",
 		}, nil
 	}
 
